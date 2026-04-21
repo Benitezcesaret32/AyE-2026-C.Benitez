@@ -11,7 +11,7 @@ for (int i = 1; i <= 100; i++)
 }
 // ejercicio B
 Console.WriteLine("ingrese su edad:");
-int edad  = Convert.ToInt32(Console.ReadLine());
+int edad = Convert.ToInt32(Console.ReadLine());
 if (edad > 18)
 {
     Console.WriteLine("Eres mayor de edad.");
@@ -193,4 +193,46 @@ else
             Console.WriteLine("No puedes votar ni manejar.");
         }
     }
+}
+// ejercicio o
+Console.WriteLine("Ejercicio O: Números del 50 al 0 de cinco en cinco (descendente):");
+for (int i = 50; i >= 0; i -= 5)
+{
+    Console.WriteLine(i);
+}
+// ejercicio P
+Console.WriteLine();
+Console.WriteLine("Ejercicio P: Verificación de contraseña (escribí la misma contraseña dos veces):");
+while (true)
+{
+    Console.Write("Contraseña: ");
+    string contraseña1 = Console.ReadLine();
+    Console.Write("Reingrese la contraseña: ");
+    string contraseña2 = Console.ReadLine();
+
+    if (contraseña1 == contraseña2)
+    {
+        Console.WriteLine("Acceso permitido");
+        break;
+    }
+    else
+    {
+        Console.WriteLine("Las contraseñas no coinciden. Intentá de nuevo.");
+    }
+}
+//ejercicio Q
+Console.WriteLine();
+Console.WriteLine("Ejercicio Q: Ingresá nombres uno por uno. El programa termina cuando un nombre tenga más de 10 caracteres.");
+while (true)
+{
+    Console.Write("Nombre: ");
+    string nombreQ = Console.ReadLine() ?? "";
+
+    if (nombreQ.Length > 10)
+    {
+        Console.WriteLine("Nombre con más de 10 caracteres recibido. Fin del programa.");
+        break;
+    }
+
+    Console.WriteLine("Nombre aceptado: " + nombreQ);
 }
