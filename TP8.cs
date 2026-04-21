@@ -37,7 +37,7 @@ for (int i = 0; i < numero.Length; i++)
 Console.WriteLine("La suma de los digitos es: " + suma);
 
 //ejercicio 4
-Console.WriteLine("Crea una cadena que contenga un párrafo largo. Pide al usuario una \"palabra prohibida\" y una \"palabra de reemplazo\". Muestra el texto resultante después de hacer el cambio.");
+Console.WriteLine("ingrese un parrafo con una palabra prohibida para remplazarla");
 string parrafo = Console.ReadLine();
 Console.WriteLine("Ingrese la palabra prohibida:");
 string palabraProhibida = Console.ReadLine();
