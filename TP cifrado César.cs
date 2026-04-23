@@ -1,8 +1,18 @@
-﻿Console.WriteLine("ingrese una frase para cifrarla o descifrarla: ");
-string frase = Console.ReadLine();
+﻿Console.WriteLine("ingrese una frase para cifrarla o descifrarla sin caracteres especiales");
+string frase = Console.ReadLine().ToLower();
 Console.WriteLine("ingrese el numero de desplazamiento: ");
 int desplazamiento = Convert.ToInt16(Console.ReadLine());
+bool contieneCaracteresEspeciales = false;
 
+for (int i = 0; i < frase.Length; i++)
+{
+    char letra = frase[i];
+    if ((letra < 'a' || letra > 'z') && letra != ' ')
+    {
+        Console.WriteLine("La frase contiene caracteres especiales. Por favor, ingrese una frase sin caracteres especiales.");
+        return;
+    }
+}
 static string Cifrar(string texto, int desplazamiento)
 {
     desplazamiento = desplazamiento % 26;
@@ -28,6 +38,7 @@ static string Cifrar(string texto, int desplazamiento)
         }
     }
     return resultado;
+
 }
 
 static string Descifrar(string texto, int desplazamiento)
