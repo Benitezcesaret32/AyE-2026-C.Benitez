@@ -236,3 +236,15 @@ while (true)
 
     Console.WriteLine("Nombre aceptado: " + nombreQ);
 }
+//ejercicio r
+console.writeline("ingrese una oracion");
+string oracion = Console.Readline();
+int contadorA = 0;
+foreach (char letra in oracion)
+{
+    if (letra == 'a' || letra == 'A')
+    {
+        contadorA++;
+    }
+}
+console.writeline("la oracion tiene" + contadorA + " letras 'a'.");
