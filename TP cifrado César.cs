@@ -1,17 +1,41 @@
 ﻿Console.WriteLine("ingrese una frase para cifrarla o descifrarla sin caracteres especiales");
-string frase = Console.ReadLine().ToLower();
-Console.WriteLine("ingrese el numero de desplazamiento: ");
-int desplazamiento = Convert.ToInt16(Console.ReadLine());
-bool contieneCaracteresEspeciales = false;
-
-for (int i = 0; i < frase.Length; i++)
+string frase;
+while (true)
 {
-    char letra = frase[i];
-    if ((letra < 'a' || letra > 'z') && letra != ' ')
+    frase = Console.ReadLine().ToLower();
+
+    bool tieneEspecial = false;
+    for (int i = 0; i < frase.Length; i++)
+    {
+        char letra = frase[i];
+        if ((letra < 'a' || letra > 'z') && letra != ' ')
+        {
+            tieneEspecial = true;
+            break;
+        }
+    }
+
+    if (tieneEspecial)
     {
         Console.WriteLine("La frase contiene caracteres especiales. Por favor, ingrese una frase sin caracteres especiales.");
-        return;
+        continue;
     }
+
+    break;
+}
+
+Console.WriteLine("ingrese el numero de desplazamiento: ");
+string entradaDesplazamiento = Console.ReadLine();
+int desplazamiento;
+bool esNumeroValido = int.TryParse(entradaDesplazamiento, out desplazamiento);
+if (esNumeroValido)
+{
+    Console.WriteLine("Número de desplazamiento válido: " + desplazamiento);
+}
+else
+{
+    Console.WriteLine("Número de desplazamiento no válido. Por favor, ingrese un número entero.");
+    return;
 }
 static string Cifrar(string texto, int desplazamiento)
 {
@@ -66,6 +90,15 @@ static string Descifrar(string texto, int desplazamiento)
         }
     }
     return resultado;
+}
+for (int i = 0; i < frase.Length; i++)
+{
+    char letra = frase[i];
+    if ((letra < 'a' || letra > 'z') && letra != ' ')
+    {
+        Console.WriteLine("La frase contiene caracteres especiales. Por favor, ingrese una frase sin caracteres especiales.");
+        return;
+    }
 }
 Console.WriteLine("ingrese una frase para cifrarla o descifrarla: (c/d)");
 string opcion = Console.ReadLine();
