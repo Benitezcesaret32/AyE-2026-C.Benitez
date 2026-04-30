@@ -8,10 +8,10 @@ while (numero != 0 && numero != 1)
 }
 
 //ejercicio 2
-Console.WriteLine("ingrese un numero de dos cifras");
+Console.Write("Ingrese un número de 2 dígitos:");
 int numero2 = Convert.ToInt32(Console.ReadLine());
-while (numero2 < 10 || numero2 > 99)
+while ((numero2 < 10 && numero2 > -10) || (numero2 > 99 || numero2 < -99))
 {
-    Console.WriteLine("ingrese un numero de dos cifras");
+    Console.Write("Número inválido. Ingrese un número de 2 dígitos: ");
     numero2 = Convert.ToInt32(Console.ReadLine());
 }
