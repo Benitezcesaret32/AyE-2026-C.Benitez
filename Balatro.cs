@@ -1,4 +1,4 @@
-﻿Console.WriteLine("crear un menu que al usuario le de las opciones de pedir, descartar o dejar de jugar, si elije pedir se le da 8 cartas, si elije descartar pedir cuantas va a descartar yy luego pedirle una por una cuales quiere descartar, y si elije dejar de jugar se termina el programa");
+﻿Console.WriteLine("Balatro");
 while (true)
 {
     Console.WriteLine("Elige una opción: 1. Pedir cartas, 2. Descartar cartas, 3. Dejar de jugar");
