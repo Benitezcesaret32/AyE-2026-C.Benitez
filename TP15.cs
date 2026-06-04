@@ -1,5 +1,5 @@
 ﻿//ejercicio 1
-Console.WriteLine("Crear una matriz 3x3 que contenga números del 1 al 9, luego imprimirla en consola de manera que se vea como una cuadricula con otra forma de hacerlo");
+Console.WriteLine("Ejercicio 1 ");
 int[,] matriz =
 {
     {1, 2, 3},
@@ -16,7 +16,7 @@ for (int i = 0; i < 3; i++)
 }
 Console.WriteLine();
 //ejercicio 2
-Console.WriteLine("Crear una matriz 3x3 que contenga números del 10 al 90, luego imprimir la suma de todos sus números.");
+Console.WriteLine("Ejercicio 2");
 int[,] matriz2 =
 {
     {10, 20, 30},
@@ -33,7 +33,7 @@ for (int i = 0; i < 3; i++)
 }
 Console.WriteLine($"La suma de los números en la matriz es: " + suma);
 //ejercicio 3
-Console.WriteLine("Crear una matriz 4x4 y llenarla de elementos, luego hacer un programa que deje al usuario ingresar una coordenada, luego que muestre el elemento que contiene ese mismo índice.");
+Console.WriteLine("Ejercicio 3");
 int[,] matriz3 =
 {
     {1, 2, 3, 4},
@@ -54,7 +54,7 @@ else
     Console.WriteLine("Coordenada inválida. Por favor ingrese valores entre 0 y 3.");
 }
 //ejercicio 4
-Console.WriteLine("Crear una matriz 4x4 y llenarla de numeros, luego hacer un programa que muestre el numero mas grande de la matriz.");
+Console.WriteLine("Ejercicio 4");
 for (int i = 0; i < 4; i++)
 {
     for (int j = 0; j < 4; j++)
@@ -85,7 +85,7 @@ for (int i = 0; i < 4; i++)
 }
 Console.WriteLine();
 //ejercicio 5
-Console.WriteLine("Crear una matriz 4x4 con números, luego hacer un programa que muestre la suma de cada fila y luego que muestre la suma de cada columna");
+Console.WriteLine("Ejercicio 5");
 for (int i = 0; i < 4; i++)
 {
     for (int j = 0; j < 4; j++)
@@ -123,7 +123,7 @@ for (int i = 0; i < 4; i++)
 }
 Console.WriteLine();
 //ejercicio 6
-Console.WriteLine("Crear una matriz 4x4 con números, luego hacer un programa que transponga la matriz (intercambia la columnas por las filas y las filas por las columnas)");
+Console.WriteLine("Ejercicio 6");
 for (int i = 0; i < 4; i++)
 {
     for (int j = 0; j < 4; j++)
@@ -152,7 +152,7 @@ for (int i = 0; i < 4; i++)
 }
 Console.WriteLine();
 //ejercicio 7
-Console.WriteLine("Escribir un programa que busque un numero ingresado por el usuario y devuelva la cantidad de veces que aparece en la matriz y la matris es esta  [1, 5, 3, 5],    [8, 5, 9, 2],   [4, 5, 6, 7]");
+Console.WriteLine("Ejercicio 7");
 int[,] matriz4 =
 {
     {1, 5, 3, 5},
@@ -182,7 +182,7 @@ for (int i = 0; i < 3; i++)
     Console.WriteLine();
 }
 //ejercicio 8
-Console.WriteLine("Crear una matriz 4x4 con números Hacer un programa que calcule el promedio de todos los números Luego el programa debe de crear otra matriz que sea la misma, con la diferencia de que todos los números menores al promedio van a ser cambiados por el promedio.");
+Console.WriteLine("Ejercicio 8");
 Console.WriteLine();
 for (int i = 0; i < 4; i++)
 {
